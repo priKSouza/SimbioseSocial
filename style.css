@@ -11,8 +11,12 @@ h1{
     font-family: 'Roboto', sans-serif;
 }
 
+.card-principal{
+    display: flex;
+    justify-content: space-around;
+}
+
 .container-1, .container-2, .container-3{
-    display: inline-block;
     align-items: center; 
     padding: 5px;
     border: 1px solid rgba(128, 128, 128, 0.13);
@@ -36,6 +40,18 @@ h1{
     font-size: 17px;
 }
 
+.estado{
+    margin: 4px 20px;
+    color: gray;
+    font-weight: 100;
+}
+
+.texto-1, .texto-2, .texto-3{
+    margin: 20px;
+    color: gray;
+    font-size: 15px;
+}
+
 .valores{
     display: inline-flex;
     margin: 0 10px;
@@ -44,6 +60,10 @@ h1{
 .real-captado{
     padding: 0 10px;
     font-size: 16px;
+}
+
+.real-captado::before, .real::before{
+    content: "R$ ";
 }
 
 .situacao, .real{
@@ -64,14 +84,5 @@ h1{
     border: none;
     background-color: white;
     color: rgb(128, 128, 128);
-}
-
-/* .alinhar-botao::before{
-    content: "♡";
-} */
-
-.texto-1, .texto-2, .texto-3{
-    margin: 20px;
-    color: gray;
-    font-size: 15px;
+    cursor: pointer;
 }
